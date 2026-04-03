@@ -50,8 +50,8 @@ a:hover { text-decoration: underline; }
 .progress-bar {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #f0a500 0%, #f7c948 100%);
-  box-shadow: 0 0 6px rgba(240,165,0,.5);
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(255,255,255,.8), 0 1px 3px rgba(58,111,163,.3);
   transition: width .08s linear;
   border-radius: 0 2px 2px 0;
 }
