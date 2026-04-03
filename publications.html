@@ -1,0 +1,33 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+description: "Publications by David Krame Kadurha — research on reinforcement learning, optimization under uncertainty, physics-informed neural networks, and time series forecasting for energy systems."
+---
+
+<div class="card fade-in">
+  <h1 class="section-title">Publications</h1>
+
+  <p style="font-size:.875rem; color:var(--text-muted); margin-bottom:1.25rem;">
+    Dynamically fetched from
+    <a href="https://www.semanticscholar.org/" target="_blank">Semantic Scholar</a>.
+    Full list also on
+    <a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}" target="_blank">Google Scholar</a>
+    and <a href="https://arxiv.org/search/?searchtype=author&query=David+Krame+Kadurha" target="_blank">arXiv</a>.
+  </p>
+
+  <div class="pub-controls">
+    <div class="pub-search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" id="pub-search" class="pub-search" placeholder="Search by title, author, or venue…">
+    </div>
+    <select id="pub-year-filter" class="pub-year-filter">
+      <option value="">All years</option>
+    </select>
+  </div>
+
+  <div id="pub-count" class="pub-count"></div>
+  <div id="pub-container" data-author-id="{{ site.author.semantic_scholar }}"></div>
+</div>

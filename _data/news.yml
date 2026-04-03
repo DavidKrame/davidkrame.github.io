@@ -1,0 +1,16 @@
+# Add news items here — newest first.
+# Format:
+#   - date: "Mon YYYY"
+#     text: "Your news text here. You can use <a href='...'>links</a>."
+
+- date: "Nov 2025"
+  text: "Started PhD at VU Amsterdam in the <a href='https://doi.org/10.61686/GOOEL09973'>VIDI Power Network Optimization</a> project, working on weather-resilient grid operations."
+
+- date: "Aug 2025"
+  text: "Completed MSc in Mathematical Sciences (Operational Research with Data Science) at the University of Edinburgh."
+
+- date: "Feb 2025"
+  text: "New preprint: <em>Bellman operator convergence enhancements in RL algorithms</em>. <a href='https://arxiv.org/abs/2505.14564'>arXiv:2505.14564</a>"
+
+- date: "Apr 2024"
+  text: "Paper published in IEEE: <em>Physics-Informed Neural Networks for Renewable Energy Production: Solar Cells Case Study</em>."

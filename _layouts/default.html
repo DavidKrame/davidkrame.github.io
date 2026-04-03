@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {{ site.author.name }}{% else %}{{ site.author.name }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo %}
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  {% if page.url contains 'publications' %}
+  <link rel="preconnect" href="https://api.semanticscholar.org">
+  {% endif %}
+</head>
+<body>
+
+  {% include nav.html %}
+
+  <main class="page-content">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  {% if page.url contains 'publications' %}
+  <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
+  {% endif %}
+
+</body>
+</html>

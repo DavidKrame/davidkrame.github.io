@@ -1,0 +1,33 @@
+title: David Krame Kadurha
+description: >-
+  Academic website of David Krame Kadurha, PhD candidate at VU University Amsterdam.
+  Research in sequential optimization under uncertainty, machine learning, and climate-resilient power grid operations.
+url: "https://davidkrame.github.io"
+baseurl: ""
+lang: en
+
+# google_site_verification: "PASTE_YOUR_CODE_HERE_AFTER_GSC_SETUP"
+
+author:
+  name: David Krame Kadurha
+  email: d.kramekadurha@vu.nl
+  position: PhD Candidate in Applied Probability & Network Optimization
+  affiliation: VU University Amsterdam
+  department: Department of Mathematics
+  address: De Boelelaan 1111, 1081 HV Amsterdam, The Netherlands
+  github: DavidKrame
+  linkedin: david-krame-kadurha-7881322ba
+  google_scholar: uvgQ9Q4AAAAJ
+  semantic_scholar: "2276475984"
+  orcid: "0009-0004-0547-1941"
+  arxiv: DavidKrame
+  vu_profile: "https://research.vu.nl/en/persons/david-krame/"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
