@@ -1,8 +1,16 @@
 <footer class="site-footer">
-  <p>
-    &copy; {{ site.time | date: "%Y" }} {{ site.author.name }} &mdash;
-    <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank">ORCID</a> &middot;
-    <a href="https://github.com/{{ site.author.github }}" target="_blank">GitHub</a> &middot;
-    <a href="{{ site.author.vu_profile }}" target="_blank">VU Profile</a>
-  </p>
+  <div class="footer-inner">
+    <p class="footer-name">David Krame Kadurha</p>
+    <p class="footer-affil">PhD Candidate · VU University Amsterdam</p>
+    <div class="footer-links">
+      <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank">ORCID</a>
+      <span class="footer-dot">·</span>
+      <a href="https://github.com/{{ site.author.github }}" target="_blank">GitHub</a>
+      <span class="footer-dot">·</span>
+      <a href="{{ site.author.vu_profile }}" target="_blank">VU Profile</a>
+      <span class="footer-dot">·</span>
+      <a href="mailto:{{ site.author.email }}">Email</a>
+    </div>
+    <p class="footer-copy">&copy; {{ site.time | date: "%Y" }}</p>
+  </div>
 </footer>

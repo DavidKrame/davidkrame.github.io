@@ -39,34 +39,23 @@ description: "David Krame Kadurha is a PhD candidate in Mathematics at VU Univer
 }
 </script>
 
-<div class="card fade-in">
-  <div class="profile-wrap">
-    <img
-      src="{{ '/assets/images/David_Krame.jpg' | relative_url }}"
-      alt="Photo of David Krame Kadurha"
-      class="profile-photo"
-      width="150" height="150"
-      fetchpriority="high"
-    >
-    <div class="profile-info">
+<!-- Hero banner -->
+<div class="hero fade-in">
+  <div class="hero-inner">
+    <div class="hero-photo-wrap">
+      <img
+        src="{{ '/assets/images/David_Krame.jpg' | relative_url }}"
+        alt="Photo of David Krame Kadurha"
+        class="hero-photo"
+        width="130" height="130"
+        fetchpriority="high"
+      >
+      <div class="hero-photo-ring"></div>
+    </div>
+    <div class="hero-text">
       <h1>David Krame Kadurha</h1>
-      <p class="position">{{ site.author.position }}</p>
-      <p class="affil">{{ site.author.department }}, {{ site.author.affiliation }}</p>
-
-      <p class="bio">
-        I am a PhD candidate at the <a href="https://vu.nl" target="_blank">Vrije Universiteit Amsterdam</a>,
-        working within the VIDI project
-        <em><a href="https://doi.org/10.61686/GOOEL09973" target="_blank">Power Network Optimization in the Age of Climate Extremes</a></em>,
-        under the supervision of <a href="https://alessandrozocca.github.io/" target="_blank">Alessandro Zocca</a>.
-        My work focuses on the sub-project <strong>Optimizing Weather-Resilient Grid Operations</strong>.
-      </p>
-      <p class="bio">
-        My research develops mathematical and computational methods — combining
-        <strong>sequential optimization under uncertainty</strong>, <strong>machine learning</strong>,
-        and <strong>applied probability</strong> — to improve the planning and real-time operation of power grids
-        under climate-driven stresses such as extreme weather and variable renewable energy sources.
-      </p>
-
+      <p class="hero-position">PhD Candidate · Applied Probability &amp; Network Optimization</p>
+      <p class="hero-affil">Department of Mathematics, VU University Amsterdam</p>
       <div class="pills">
         <a href="mailto:{{ site.author.email }}" class="pill">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
@@ -97,29 +86,189 @@ description: "David Krame Kadurha is a PhD candidate in Mathematics at VU Univer
   </div>
 </div>
 
-<div class="card fade-in">
-  <h2 class="section-title">Research Interests</h2>
-  <div class="tags">
-    <span class="tag">Sequential Optimization Under Uncertainty</span>
-    <span class="tag">Reinforcement Learning</span>
-    <span class="tag">Machine Learning</span>
-    <span class="tag">Power Grid Reliability</span>
-    <span class="tag">Stochastic Optimization</span>
-    <span class="tag">Applied Probability</span>
-    <span class="tag">Network Science</span>
-    <span class="tag">Physics-Informed Neural Networks</span>
-    <span class="tag">Decision-Focused Learning</span>
-  </div>
-</div>
+<!-- Two-column content -->
+<div class="home-grid">
 
-<div class="card fade-in">
-  <h2 class="section-title">News</h2>
-  <ul class="news-list">
-    {% for item in site.data.news %}
-    <li class="news-item">
-      <span class="news-date">{{ item.date }}</span>
-      <span>{{ item.text }}</span>
-    </li>
-    {% endfor %}
-  </ul>
+  <!-- Left: main content -->
+  <div class="home-main">
+
+    <div class="card fade-in">
+      <div class="section-heading">
+        <div class="section-heading-bar"></div>
+        <h2>About</h2>
+      </div>
+      <p class="bio-text">
+        I am a PhD candidate at the <a href="https://vu.nl" target="_blank">Vrije Universiteit Amsterdam</a>,
+        working within the VIDI project
+        <em><a href="https://doi.org/10.61686/GOOEL09973" target="_blank">Power Network Optimization in the Age of Climate Extremes</a></em>,
+        under the supervision of <a href="https://alessandrozocca.github.io/" target="_blank">Alessandro Zocca</a>.
+        My work focuses on the sub-project <strong>Optimizing Weather-Resilient Grid Operations</strong>.
+      </p>
+      <p class="bio-text">
+        My research develops mathematical and computational methods — combining
+        <strong>sequential optimization under uncertainty</strong>, <strong>machine learning</strong>,
+        and <strong>applied probability</strong> — to improve the planning and real-time operation of power grids
+        under climate-driven stresses such as extreme weather and variable renewable energy sources.
+      </p>
+    </div>
+
+    <div class="card fade-in">
+      <div class="section-heading">
+        <div class="section-heading-bar"></div>
+        <h2>Research Interests</h2>
+      </div>
+      <div class="tags">
+        <span class="tag">Sequential Optimization Under Uncertainty</span>
+        <span class="tag">Reinforcement Learning</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Power Grid Reliability</span>
+        <span class="tag">Stochastic Optimization</span>
+        <span class="tag">Applied Probability</span>
+        <span class="tag">Network Science</span>
+        <span class="tag">Physics-Informed Neural Networks</span>
+        <span class="tag">Decision-Focused Learning</span>
+      </div>
+    </div>
+
+    <div class="card fade-in">
+      <div class="section-heading">
+        <div class="section-heading-bar"></div>
+        <h2>News</h2>
+      </div>
+      <ul class="news-list">
+        {% for item in site.data.news %}
+        <li class="news-item">
+          <span class="news-date">{{ item.date }}</span>
+          <span>{{ item.text }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Right: sidebar -->
+  <div class="home-side">
+
+    <div class="card fade-in">
+      <div class="section-heading">
+        <div class="section-heading-bar"></div>
+        <h2>Info</h2>
+      </div>
+      <ul class="info-list">
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Institution</div>
+            <div class="info-value">VU University Amsterdam</div>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Department</div>
+            <div class="info-value">Mathematics</div>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Supervisor</div>
+            <div class="info-value"><a href="https://alessandrozocca.github.io/" target="_blank">Alessandro Zocca</a></div>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Email</div>
+            <div class="info-value"><a href="mailto:{{ site.author.email }}">d.kramekadurha@vu.nl</a></div>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Location</div>
+            <div class="info-value">Amsterdam, Netherlands</div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="card fade-in">
+      <div class="section-heading">
+        <div class="section-heading-bar"></div>
+        <h2>Profiles</h2>
+      </div>
+      <ul class="info-list">
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Google Scholar</div>
+            <div class="info-value"><a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}" target="_blank">Krame David</a></div>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.28-1.23 3.28-1.23.66 1.66.26 2.88.12 3.18.78.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.42.36.82 1.1.82 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div>
+            <div class="info-label">GitHub</div>
+            <div class="info-value"><a href="https://github.com/{{ site.author.github }}" target="_blank">DavidKrame</a></div>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM8.14 4.89c.56 0 .97.41.97.93s-.42.93-.97.93c-.56 0-.97-.42-.97-.93s.42-.93.97-.93zm-.72 3.17h1.44v10.06H7.42V8.06zm3.97 0h3.9c3.72 0 5.6 2.47 5.6 5.03s-1.88 5.03-5.6 5.03h-3.9V8.06zm1.44 1.27v7.49h2.38c2.89 0 4.24-1.78 4.24-3.75s-1.35-3.74-4.24-3.74h-2.38z"/></svg>
+          </div>
+          <div>
+            <div class="info-label">ORCID</div>
+            <div class="info-value"><a href="https://orcid.org/{{ site.author.orcid }}" target="_blank">0009-0004-0547-1941</a></div>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </div>
+          <div>
+            <div class="info-label">LinkedIn</div>
+            <div class="info-value"><a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">David Krame Kadurha</a></div>
+          </div>
+        </li>
+
+        <li class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <div class="info-label">VU Profile</div>
+            <div class="info-value"><a href="{{ site.author.vu_profile }}" target="_blank">research.vu.nl</a></div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
 </div>
