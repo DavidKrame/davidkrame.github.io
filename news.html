@@ -1,0 +1,27 @@
+---
+layout: default
+title: News
+permalink: /news/
+description: "Latest news and updates from David Krame Kadurha — publications, positions, and academic milestones."
+---
+
+<div class="page-header fade-in">
+  <h1>News</h1>
+  <p>Updates on research, publications, and academic milestones.</p>
+</div>
+
+<div class="card fade-in">
+  <div class="news-timeline">
+    {% for item in site.data.news %}
+    <div class="news-tl-item">
+      <div class="news-tl-meta">
+        <span class="news-tl-date">{{ item.date }}</span>
+        {% if item.type %}
+        <span class="news-type-badge {{ item.type | downcase }}">{{ item.type }}</span>
+        {% endif %}
+      </div>
+      <p class="news-tl-text">{{ item.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

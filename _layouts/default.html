@@ -18,6 +18,7 @@
 <body>
 
   {% include nav.html %}
+  <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
 
   <main class="page-content">
     {{ content }}
@@ -28,6 +29,7 @@
   {% if page.url contains 'publications' %}
   <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
   {% endif %}
+  <script src="{{ '/assets/js/progress.js' | relative_url }}"></script>
 
 </body>
 </html>

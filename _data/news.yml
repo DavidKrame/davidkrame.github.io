@@ -1,16 +1,25 @@
 # Add news items here — newest first.
 # Format:
 #   - date: "Mon YYYY"
+#     type: "Position"   # Options: Position, Publication, Education, Talk, Other
 #     text: "Your news text here. You can use <a href='...'>links</a>."
 
 - date: "Nov 2025"
-  text: "Started PhD at VU Amsterdam in the <a href='https://doi.org/10.61686/GOOEL09973'>VIDI Power Network Optimization</a> project, working on weather-resilient grid operations."
+  type: "Position"
+  text: "Started PhD at VU Amsterdam in the <a href='https://doi.org/10.61686/GOOEL09973'>VIDI Power Network Optimization</a> project, working on weather-resilient grid operations under the supervision of Alessandro Zocca and Sandjai Bhulai."
 
 - date: "Aug 2025"
+  type: "Education"
   text: "Completed MSc in Mathematical Sciences (Operational Research with Data Science) at the University of Edinburgh."
 
 - date: "Feb 2025"
+  type: "Publication"
   text: "New preprint: <em>Bellman operator convergence enhancements in RL algorithms</em>. <a href='https://arxiv.org/abs/2505.14564'>arXiv:2505.14564</a>"
 
-- date: "Apr 2024"
-  text: "Paper published in IEEE: <em>Physics-Informed Neural Networks for Renewable Energy Production: Solar Cells Case Study</em>."
+- date: "Jun 2024"
+  type: "Education"
+  text: "Completed MSc in Mathematical Sciences (Data Science) at the African Institute for Mathematical Sciences (AIMS), Cameroon."
+
+- date: "Jun 2023"
+  type: "Publication"
+  text: "Paper published in IEEE: <em>Transformers in Time Series Forecasting: Transfer Learning Performance Analysis</em>. <a href='https://ieeexplore.ieee.org/document/10361789'>IEEE</a>"
