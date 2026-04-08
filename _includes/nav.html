@@ -2,9 +2,12 @@
   <div class="nav-inner">
     <a href="{{ '/' | relative_url }}" class="nav-brand">
       <span class="nav-initials">DK</span>
-      David Krame Kadurha
+      <span class="nav-brand-name">David Krame Kadurha</span>
     </a>
-    <div class="nav-links">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>About</a>
       <a href="{{ '/publications/' | relative_url }}" {% if page.url contains 'publications' %}class="active"{% endif %}>Publications</a>
       <a href="{{ '/news/' | relative_url }}" {% if page.url contains 'news' %}class="active"{% endif %}>News</a>
@@ -12,3 +15,21 @@
     </div>
   </div>
 </nav>
+<script>
+  (function () {
+    var btn  = document.querySelector('.nav-toggle');
+    var menu = document.getElementById('nav-links');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function () {
+      var open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    // Close menu when a link is clicked
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
