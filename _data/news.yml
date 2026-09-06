@@ -4,9 +4,13 @@
 #     type: "Position"   # Options: Position, Publication, Education, Talk, Other
 #     text: "Your news text here. You can use <a href='...'>links</a>."
 
+- date: "Aug 2026"
+  type: "Education"
+  text: "Attended the <a href='https://www.eurandom.tue.nl/event/dutch-sequential-decision-making-community-2nd-meeting-on-modern-topis-in-reinforcement-learning/' target='_blank'>2nd Meeting of the Dutch Sequential Decision-Making Community on Modern Topics in Reinforcement Learning</a> (August 26–28, EURANDOM, Eindhoven) — three days of lectures, hands-on sessions and open problem discussions on optimization-inspired algorithms for MDPs, explainable RL, structured RL and Decision Focused Learning (DFL), organised by the LNMB and the 4TU+.AMI Strategic Research Initiative."
+
 - date: "Jun 2026"
   type: "Talk"
-  text: "Presenting at <a href='https://www.stochmod2026.nl/' target='_blank'>StochMod 2026</a> (June 3–5, Amsterdam Science Park) — the biennial meeting of the EURO Working Group on Stochastic Modelling, organised by CWI and VU Amsterdam. <a href='/assets/slides_stochmod.pdf'>Access the slides here</a>."
+  text: "Presented at <a href='https://www.stochmod2026.nl/' target='_blank'>StochMod 2026</a> (June 3–5, Amsterdam Science Park) — the biennial meeting of the EURO Working Group on Stochastic Modelling, organised by CWI and VU Amsterdam. <a href='/assets/slides_stochmod.pdf'>Access the slides here</a>."
 
 - date: "May 2026"
   type: "Education"
